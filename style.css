@@ -267,7 +267,8 @@ svg{
 
   h1{
        font-family: 'Segoe UI', sans-serif;
-       font-style: bold;
+       font-style: normal;
+       font-weight: bold;
        font-size: 36px;
        line-height: 45px;
        letter-spacing: -0.05em;
@@ -359,6 +360,9 @@ grid-template-areas:
   main{
      margin: 2% 30px 2% 30px; 
      text-align: justify;
+  }
+  h1{
+  font-size: 46px;
   }
   h1, p{
     text-align: center;
