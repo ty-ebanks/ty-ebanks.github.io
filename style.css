@@ -348,7 +348,10 @@ grid-template-areas:
 /* @media screen and (min-width: 700px)  */
   nav{
     border: 2px solid black;
-    grid-auto-rows: 65px, auto, 1fr , auto, auto;
+  }
+  
+  .container{
+  grid-auto-rows: 60px, 180px, 136px , 84px, auto;
   }
   header{
   border: 2px solid white;
