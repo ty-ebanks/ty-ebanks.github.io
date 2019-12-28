@@ -282,6 +282,7 @@ svg{
        font-style: normal;
        font-weight: 300;
        font-size: 18px;
+       line-height: 28px;
   }
 
   button{
@@ -326,14 +327,13 @@ grid-template-areas:
 "nv nv nv nv nv nv nv nv nv nv nv nv"
 ". . . . hd hd hd hd  . . . ."
 "mn mn mn mn mn mn mn mn mn mn mn mn"
-". . . . sct sct sct sct . . . ."
+". . . sct sct sct sct sct sct . . ."
 ". . . . ft ft ft ft . . . .";
 }
   main{
     padding: 0 8% 0 8%;
   }
-    p{
-    line-height: 25px;
+  p{
     text-align: justify;
     letter-spacing: -0.04em;
     color: rgba(0, 0, 0, 0.86);
@@ -361,7 +361,7 @@ grid-template-areas:
       text-align: center;
   }
   p{
-    line-height: 28px;
+    
     text-align: center;
   }
   .line-break{
