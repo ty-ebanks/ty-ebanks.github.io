@@ -347,16 +347,11 @@ grid-template-areas:
 /*   Small Tablet  */
 @media only screen and (min-width: 43.75em) and (max-width: 63.9375em){
 /* @media screen and (min-width: 700px)  */
-  nav{
-    border: 2px solid black;
-  }
-  
+   
   .container{
   grid-auto-rows: 60px, 180px, 136px , 84px, auto;
   }
-  header{
-  border: 2px solid white;
-  }
+ 
   main{
      margin: 2% 30px 2% 30px; 
      text-align: justify;
@@ -366,7 +361,7 @@ grid-template-areas:
       text-align: center;
   }
   p{
-    line-height: 130px;
+    line-height: 60px;
     text-align: center;
   }
   .line-break{
