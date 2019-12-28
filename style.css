@@ -362,9 +362,11 @@ grid-template-areas:
      text-align: justify;
   }
   h1{
-  font-size: 46px;
+      font-size: 46px;
+      text-align: center;
   }
-  h1, p{
+  p{
+    line-height: 3%;
     text-align: center;
   }
   .line-break{
