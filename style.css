@@ -331,6 +331,12 @@ grid-template-areas:
   main{
     padding: 0 8% 0 8%;
   }
+    p{
+    line-height: 25px;
+    text-align: justify;
+    letter-spacing: -0.04em;
+    color: rgba(0, 0, 0, 0.86);
+}
 }
 
 /*   Small Tablet  */
