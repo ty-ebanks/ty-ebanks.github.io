@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 *{
   margin: 0;
   padding: 0;
 }
-
 .container{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -14,16 +14,15 @@
   grid-template-areas:
   "nv nv nv nv nv nv nv nv nv nv nv nv"
   ". . . . hd hd hd hd  . . . ."
-  "mn mn mn mn mn mn mn mn mn mn mn mn"
-  ". . . . . sct sct . . . . ."
-  "ft ft ft ft ft ft ft ft ft ft ft ft";
+  ". . mn mn mn mn mn mn mn mn . ."
+  ". . . . sct sct sct sct . . . ."
+  ". . . . ft ft ft ft . . . .";
 }
 nav{
   grid-area: nv;
 }
 header{
   grid-area: hd;
-
 }
 main{
   grid-area: mn;
@@ -35,42 +34,11 @@ footer{
   grid-area: ft;
 }
 
-
-
 nav{
   display: grid;
   grid-auto-rows: minmax(65px, auto);
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:  "logo . . . menu";
-}
-
-.my-logo{
-  grid-area: logo;
-  margin: 0 0 0 22px;
-}
-
-.menu{
-  grid-area: menu;
-  align-self: center;
-  margin: 0 22px 0 0;
-  padding: 7px;
-}
-
-footer{
-  margin: 6% 0 0 0;
-}
-
-section, header, footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-
-}
-
-header, section{
-   /* border: 2px solid black; */
-   /* margin-left: 1em; */
+  grid-template-areas:  "logo . . . mnu";
 }
 
 nav{
@@ -81,29 +49,51 @@ nav{
   height: 65px;  /*possibly remove*/
 }
 
-header{
-  position: relative;
-  width: 205px;
-  height: 205px;
-  /* border: salmon 3px solid; */
+.my-logo{
+  grid-area: logo;
+  margin: 0 0 0 22px;
 }
-
+.my-logo{
+  width: 52px;
+  padding: 5px;
+  margin-left: 5%;
+}
+.menu{
+  grid-area: mnu;
+  align-self: center;
+  margin: 0 22px 0 0;
+  padding: 7px;
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .my-pic{
   border-radius: 100%;
-  /* border: #6723C6 3px solid; */
-  height: 205px;
-  width: 210px;
+  width: 180px;
+  height: 185px;
 }
-
-
-
+#button{
+  display: flex;
+  justify-content: center;
+}
+.icons{
+  margin: 0.438em;
+}
+footer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
 
 /*---------------------------------------------------------------------------------------*/
 /*Code for float shadow effect*/
 
 /*glow button css */
 button::before {
-  background: #9DFFE4; /*00EFB5*/
+  background: #9DFFE4;
   transition: .5s;
   transform: scale(.9);
   z-index: -1;
@@ -116,8 +106,6 @@ button:hover::before {
 
 button:hover {
   color: #B19EFF;
-  /* box-shadow: 0 0 5px #B19EFF;
-  text-shadow: 0 0 5px #B19EFF; */
 }
 /*----------------------------*/
 .icons{
@@ -133,8 +121,9 @@ button:hover {
 }
 
 /*-----------------------------------------*/
+/* Animations for buttons and images */
 
-
+/* Code used for animations from Github Repo https://github.com/IanLunn/Hover/blob/master/css/hover.css Author: Ian Lunn @IanLunn*/
 
 /* Wobble Skew */
 @-webkit-keyframes hvr-wobble-skew {
@@ -207,9 +196,6 @@ button:hover {
   animation-iteration-count: 1;
 }
 
-
-
-
 /* Skew Forward */
 .hvr-skew-forward {
   display: inline-block;
@@ -230,21 +216,10 @@ button:hover {
 }
 
 /*---------------------------------------------------------------------------------------*/
-/* img.my-pic {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
 
-}  /* top: 0px;
-left: 0px; */
-
-
-
-nav > img{
-  width: 63px;
-}
-
+ nav > img{
+    width: 63px;
+ }
 
 svg{
   background-color: #000;
@@ -253,7 +228,6 @@ svg{
   width: 45px;
   height: 44px;  /* max-width: 90%; */
 }
-
   /*Code for menu button https://codepen.io/ainalem/pen/LJYRxz  CodePen Home Flippin' burgers A PEN BY Mikael Ainalem*/
   .ham {
     cursor: pointer;
@@ -310,14 +284,12 @@ svg{
   }
 
   button{
-
     /*Style for button text*/
     font-family: Helvetica Rounded;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     color: #fff;
-    /* justify-content: center; */
 
     /* Appearance of button*/
     width: 169px;
@@ -327,7 +299,6 @@ svg{
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-
   .icons{
     max-width: 40px;
     max-height: 40px;
@@ -346,70 +317,43 @@ body{
   width: 100vw;
 }
 
-
-
 /*   Mobile  */
-@media only screen and (min-width: 18.75em){
+@media only screen and (min-width: 18.75em) and (max-width: 43.688em){
 /* min 300pxs */
-
-.my-logo{
-  width: 52px;
-  padding: 5px;
-  margin-left: 5%;
-}
-
-.menu{
-  margin-right: 5%;
-}
-
-.my-pic{
-  position: absolute;
-  width: 170px;
-  height: 175px;
+.container{
+grid-template-areas:
+"nv nv nv nv nv nv nv nv nv nv nv nv"
+". . . . hd hd hd hd  . . . ."
+"mn mn mn mn mn mn mn mn mn mn mn mn"
+". . . . sct sct sct sct . . . ."
+". . . . ft ft ft ft . . . .";
 }
   main{
-    padding: 0 10% 0 10%;
+    padding: 0 8% 0 8%;
+    border: 2px solid black;
   }
-  .icons{
-    margin: 8px;
-  }
-
 }
 
 /*   Small Tablet  */
 @media only screen and (min-width: 43.75em) and (max-width: 63.9375em){
 /* @media screen and (min-width: 700px)  */
-  /* body{
-    background: green;
-  } */
 
-  .my-logo{
-    width: 56px;
-    padding: 4px 0;
+  main{
+     margin: 2% 30px 2% 30px; /*originally -10*/
+     text-align: justify;
   }
-main{
-  margin: 2% 30px 2% 30px; /*originally -10*/
-  text-align: justify;
-}
-h1, p{
+  h1, p{
     text-align: center;
-}
-
-.line-break{
-  display: none;
-}
-
+  }
+  .line-break{
+     display: none;
+  }
 }
 
 /*   Medium Tablet  */
 @media only screen and (min-width: 64em) and (max-width: 87.4375em){
 /* @media screen and (min-width: 1024px){  */
-  /* body{
-    background: yellow;
-   } */
-header{
-  width: 330px;
-}
+
   h1{
     font-size: 46px;
     text-align: center;
@@ -420,45 +364,20 @@ header{
   .line-break{
     display: none;
   }
-  .icons{
-    margin: 6px;
-  }
-
 }
 
 
 /*   Desktop  Large Screens*/
 @media only screen and (min-width: 87.5em) {
 /* min-width 1400px, large screens */
-  /* body{
-      background: red;
-   } */
-
-  .container{
-    grid-template-areas:
-    "nv nv nv nv nv nv nv nv nv nv nv nv"
-    ". . . . . hd hd . . . . ."
-    ". . . . . hd hd . . . . ."
-    ". . . . . hd hd . . . . ."
-    ". . . mn mn mn mn mn mn . . ."
-    ". . . . . sct sct . . . . ."
-    "ft ft ft ft ft ft ft ft ft ft ft ft";
-  }
 
   p, h1{
     text-align: center;
   }
-
   h1{
     font-size: 56px;
-
   }
   .line-break{
     display: none;
   }
-
-  .icons{
-    margin: 8px;
-  }
-
 }
