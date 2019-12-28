@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|M+PLUS+Rounded+1c:800&display=swap');
 
 *{
   margin: 0;
@@ -285,7 +285,7 @@ svg{
 
   button{
     /*Style for button text*/
-    font-family: Helvetica Rounded;
+    font-family: 'Helvetica Rounded', 'M PLUS Rounded 1c', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -347,7 +347,7 @@ grid-template-areas:
 @media only screen and (min-width: 43.75em) and (max-width: 63.9375em){
 /* @media screen and (min-width: 700px)  */
   header{
-  border 2px solid white;
+  border: 2px solid white;
   }
   main{
      margin: 2% 30px 2% 30px; 
