@@ -337,6 +337,10 @@ grid-template-areas:
     letter-spacing: -0.04em;
     color: rgba(0, 0, 0, 0.86);
 }
+  button{
+     width: 169px;
+     height: 48px;
+  }
 }
 
 /*   Small Tablet  */
@@ -344,7 +348,7 @@ grid-template-areas:
 /* @media screen and (min-width: 700px)  */
 
   main{
-     margin: 2% 30px 2% 30px; /*originally -10*/
+     margin: 2% 30px 2% 30px; 
      text-align: justify;
   }
   h1, p{
