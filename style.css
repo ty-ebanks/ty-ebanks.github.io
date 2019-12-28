@@ -307,7 +307,7 @@ svg{
 
 /*Code from https://css-tricks.com/perfect-full-page-background-image/ to fix background to cover entire space*/
 body{
-  background: url(triangles.png) no-repeat center center fixed, linear-gradient(0deg, #6723C6 0%, rgba(0, 239, 181, 0.87) 100%);
+  background: url(imgs/triangles.png) no-repeat center center fixed, linear-gradient(0deg, #6723C6 0%, rgba(0, 239, 181, 0.87) 100%);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
