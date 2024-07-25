@@ -1,2 +1,3 @@
 # ty-ebanks.github.io
-Portfolio Website
+Demo version of My Portfolio Website
+URL: https://tyebanks.github.io/
